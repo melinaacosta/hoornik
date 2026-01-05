@@ -7,7 +7,7 @@
 
     <!-- Fuentes -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap"
       rel="stylesheet"
     />
 
@@ -22,14 +22,13 @@
           <img
             src="public/img/logook_page-0001.jpg"
             alt="Banner principal"
-            width="400"
+            width="300"
           />
         </section>
       </div>
       <nav>
         <a href="index.html">Inicio</a>
-        <a href="about.html">Notas</a>
-        <a href="gallery.html">Galería</a>
+        <a href="about.html">Artistas</a>
         <a href="contact.html">Contacto</a>
       </nav>
     </header>
@@ -47,37 +46,336 @@
       </a>
     </section>
 
-    <!-- SLIDER DE GALERÍA -->
-    <section class="container slider">
-      <div class="slides">
-        <img
-          src="public/img/Alicia-Penalba.-Contrapunto.-1958.-Bronce.jpg"
-          alt="Obra de arte 1"
-          class="slide active"
-        />
-        <img
-          src="public/img/2022-Revolution-vegetale-dapres-Leonard-Rodrigo-Reinoso-2-PG.jpg"
-          alt="Obra de arte 2"
-          class="slide"
-        />
-        <img
-          src="public/img/CHAILE_views_01.jpg"
-          alt="Obra de arte 3"
-          class="slide"
-        />
-        <img
-          src="public/img/Lazo de Luz-Cristal 140 x 140 2015  .jpg"
-          alt="Obra de arte 4"
-          class="slide"
-        />
-        <img
-          src="public/img/LE_MaisonFond_ph_MAFFINI_01.jpg"
-          alt="Obra de arte 5"
-          class="slide"
-        />
+    <!-- GALERÍA ESTILO MASONRY -->
+    <section class="container gallery-masonry">
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="public/img/Reancimiento de Venus 100 x 170 2018.jpg"
+                alt="Lazo de Luz"
+              />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Gravinesse</h3>
+              <p>Renacimiento de Venus, 2018</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <button class="prev">&#10094;</button>
-      <button class="next">&#10095;</button>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- FRENTE -->
+            <div class="flip-card-front">
+              <img
+                src="public/img/2012-Les-Trois-Graces-Rodrigo-Reinoso-PG-1.jpg"
+                alt="Obra 1"
+              />
+            </div>
+
+            <!-- DORSO -->
+            <div class="flip-card-back">
+              <h3>Pablo Reinoso</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="public/img/Alicia-Penalba.-Trofeo.-1962.-Bronce.jpg"
+                alt="Contrapunto"
+              />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Alicia Penalba</h3>
+              <p>Trofeo, 1962</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- FRENTE -->
+            <div class="flip-card-front">
+              <img
+                src="public/img/2022-Revolution-vegetale-dapres-Leonard-Rodrigo-Reinoso-2-PG.jpg"
+                alt="Obra 1"
+              />
+            </div>
+
+            <!-- DORSO -->
+            <div class="flip-card-back">
+              <h3>Pablo Reinoso</h3>
+              <p>Revolution végétale</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="public/img/Alicia-Penalba.-Contrapunto.-1958.-Bronce.jpg"
+                alt="Contrapunto"
+              />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Alicia Penalba</h3>
+              <p>Contrapunto, 1958</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- FRENTE -->
+            <div class="flip-card-front">
+              <img
+                src="public/img/2012-Two-for-tango-Rodrigo-Reinoso-1-PG.jpg"
+                alt="Obra 1"
+              />
+            </div>
+
+            <!-- DORSO -->
+            <div class="flip-card-back">
+              <h3>Pablo Reinoso</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="public/img/CHAILE_views_01.jpg" alt="Vista Chaile" />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Gabriel Chaile</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="public/img/Lazo de Luz-Cristal 140 x 140 2015  .jpg"
+                alt="Lazo de Luz"
+              />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Gravinesse</h3>
+              <p>Lazo de Luz, 2015</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="public/img/AVR_TwoSuns__093__f.jpg" alt="Two Suns" />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Adrián Villar Rojas</h3>
+              <p>Two Suns</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="public/img/KUITC71806 - A3_KUITC71806.jpg"
+                alt="Obra KUIT"
+              />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Guillermo Kuitca</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="public/img/LE_MaisonFond_ph_MAFFINI_01.jpg"
+                alt="Maison Fond"
+              />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Leandro Erlich</h3>
+              <p>Le MaisonFond</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="public/img/CHAILE_views_26.jpg" alt="Vista Chaile" />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Gabriel Chaile</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="public/img/duville.jpg" alt="Duville" />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Duville</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="public/img/El Orden Implicado 120 x 170 2017.jpg"
+                alt="Lazo de Luz"
+              />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Gravinesse</h3>
+              <p>El Orden Implicado, 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="public/img/CHAILE_views_09.jpg" alt="Vista Chaile" />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Gabriel Chaile</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="public/img/LE_Batiment_02.jpg" alt="Maison Fond" />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Leandro Erlich</h3>
+              <p>Le Batiment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="public/img/ Lu & Una 160 x 120 2016.jpg"
+                alt="Lazo de Luz"
+              />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Gravinesse</h3>
+              <p>Lu & Una, 2016</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="public/img/Clouds_02.JPG" alt="Maison Fond" />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Leandro Erlich</h3>
+              <p>Clouds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="public/img/Alicia-Penalba.-Trilogía.-1965.-Bronce.jpg"
+                alt="Contrapunto"
+              />
+            </div>
+
+            <div class="flip-card-back">
+              <h3>Alicia Penalba</h3>
+              <p>Trilogía, 1965</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- agregá más imágenes según necesites -->
     </section>
 
     <!-- FOOTER -->

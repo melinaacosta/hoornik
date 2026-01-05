@@ -8,29 +8,39 @@
 /* Variables de color */
 :root {
   --color-bg: #fdfdfd;
-  --color-text: #1a1a1a;
+  --color-text: #2d2d2d;
   --color-accent: #c49b66;
   --color-secondary: #555555;
   --color-border: #e0e0e0;
 }
 
-/* Fuentes */
+/* Tipografía global */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   background-color: var(--color-bg);
   color: var(--color-text);
-  line-height: 1.6;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
 }
 
+/* TODOS los títulos igual de finos */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  text-transform: uppercase; /* opcional, queda muy galería */
 }
+
 
 /* Contenedor */
 .container {
   max-width: 1200px;
   margin: auto;
+}
+
+.chico {
+  padding-bottom: 50px;
 }
 
 @media (max-width: 768px) {
@@ -52,7 +62,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 20px 0 35px 0;
 }
 
 nav a {
@@ -66,6 +76,25 @@ nav a {
 nav a:hover {
   color: var(--color-accent);
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
+}
+
 
 /* ------------------------- */
 /* SLIDER */
@@ -155,7 +184,7 @@ nav a:hover {
 
 /* Card individual */
 .note-card {
-  border: 1px solid var(--color-border);
+  border: 1px solid #e0e0e054;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -240,6 +269,88 @@ nav a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .gallery-item:hover .flip-card-inner {
+    transform: none;
+  }
+
+  .flip-card-back {
+    position: relative;
+    transform: none;
+    background-color: transparent;
+    padding: 10px 0 0;
+  }
+
+  .flip-card-back h3,
+  .flip-card-back p {
+    font-size: 12px;
+    text-align: left;
+  }
+}
+
+
+/* ------------------------- */
+/* FLIP CARD GALERÍA */
+/* ------------------------- */
+
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease;
+}
+
+/* Hover: gira */
+.gallery-item:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Frente (imagen) */
+.flip-card-front img {
+  width: 100%;
+  display: block;
+}
+
+/* Dorso */
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  background-color: #cccbcb5d; /* color liso elegante */
+  color: #3b3b3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back h3 {
+  font-family: 'Playfair Display', serif;
+  color: #494949;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.flip-card-back p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+
 /* CONTACTO */
 .contact-section {
   padding: 60px 20px;
@@ -316,6 +427,72 @@ nav a:hover {
     max-width: 450px;
   }
 }
+
+@media (max-width: 600px) {
+  .notes h2 {
+    font-size: 1.4rem;
+  }
+
+  .note-card h3 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-section h1 {
+    font-size: 28px;
+  }
+}
+
+
+.article {
+  max-width: 800px;
+}
+
+.article-header h1 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.article-header h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #666;
+}
+
+.article-cover img {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.article-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.article-content h3 {
+  margin: 3rem 0 1rem;
+  font-weight: 400;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 3rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+
 
 
 

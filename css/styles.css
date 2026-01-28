@@ -167,6 +167,11 @@ nav a:hover {
 
 /* Sección de notas */
 
+.notes {
+  padding: 30px 30px;
+  text-align: center;
+}
+
 .notes h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
